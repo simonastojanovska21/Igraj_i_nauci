@@ -1,0 +1,154 @@
+.logos{
+  height: 80px;
+}
+
+.blueBackground{
+  background-color: #1483E4;
+}
+
+.lightBackground{
+  background-color: #F0F2F2;
+}
+
+.redBackground{
+  background-color: #F79F77;
+}
+
+.redButton{
+  background-color: #F79F77;
+}
+
+
+
+
+.goldBackground{
+  background-color: #bb9c57;
+}
+
+.title{
+  font-size: 40px;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.greenText{
+  color: #004332;
+}
+
+.brownText{
+  color: #451F16;
+}
+
+.goldText{
+  color: #bb9c57;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 150px;
+}
+
+.description{
+  transform: translateX(-40%);
+  bottom: initial;
+  top: 65%;
+}
+
+.centerCaption{
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 55%;
+}
+
+.fontSize{
+  font-size: 80px;
+}
+
+.gridImages{
+  width: 400px;
+  height: 400px;
+}
+
+.gridImageOnHover{
+  transition: 1s;
+}
+
+.gridImageOnHover:hover{
+  transform: scale(1.1);
+}
+
+.centeredForms{
+  max-width: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 350px;
+}
+
+.imageInTable{
+  width: 100px;
+  height: 100px;
+}
+
+.cartButtons{
+  background-color: #bb9c57;
+  color: #004332;
+}
+
+.dashedList{
+  list-style-type: none;
+}
+.dashedList > li:before{
+  content: '- ';
+}
+
+.shoppingCartImage{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.rate-area {
+  float: left;
+  border-style: none;
+}
+
+.rate-area:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0,0,0,0);
+}
+
+.rate-area:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 400%;
+  line-height: 1.2;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rate-area:not(:checked) > label:before { content: '★ '; }
+
+.rate-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+
+}
+
+.rate-area:not(:checked) > label:hover, .rate-area:not(:checked) > label:hover ~ label { color: gold; }
+
+.rate-area > input:checked + label:hover, .rate-area > input:checked + label:hover ~ label, .rate-area > input:checked ~ label:hover, .rate-area > input:checked ~ label:hover ~ label, .rate-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
