@@ -25,7 +25,7 @@ const Home=(props)=>{
                                 Започни</Link>
                         </div>
                     </div>
-                    <div className={"col justify-content-center"}>
+                    <div className={"col justify-content-center align-items-center"}>
                         <div>
                             <img src={homepageImage} className={"img-fluid mx-auto d-block"} alt={"boy and girl learning"}/>
                         </div>

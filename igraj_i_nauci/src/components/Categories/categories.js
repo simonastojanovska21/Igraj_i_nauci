@@ -14,25 +14,25 @@ const Categories=(props)=>{
                 </div>
 
                 <div className={"row"}>
-                    <div className={"col text-center"} >
+                    <div className={"col-sm-3 text-center"} >
                         <Link to={"/math"}>
                             <img src={matematika} className={"img-fluid mx-auto d-block"} alt={"matematika"}/>
                         </Link>
                     </div>
 
-                    <div className={"col text-center"} >
+                    <div className={"col-sm-3 text-center"} >
                         <Link to={"/macedonian"}>
                             <img src={makedonski} className={"img-fluid mx-auto d-block"} alt={"makedonski"}/>
                         </Link>
                     </div>
 
-                    <div className={"col text-center"} >
+                    <div className={"col-sm-3 text-center"} >
                         <Link to={"/science"}>
                             <img src={prirodni} className={"img-fluid mx-auto d-block"} alt={"prirodni nauki"}/>
                         </Link>
                     </div>
 
-                    <div className={"col text-center"} >
+                    <div className={"col-sm-3 text-center"} >
                         <Link to={"/games"}>
                             <img src={igri} className={"img-fluid mx-auto d-block"} alt={"igri"}/>
                         </Link>

@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/digits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -45,9 +45,11 @@
       <recent name="C:\Users\Simona\Documents\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\digits" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Simona\Documents\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\digits" />
-      <recent name="C:\Users\Simona\Documents\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images" />
-      <recent name="C:\Users\Simona\Documents\GitHub\Igraj_i_nauci\igraj_i_nauci\src\components\App" />
+      <recent name="D:\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\math" />
+      <recent name="D:\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images" />
+      <recent name="D:\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\hangman" />
+      <recent name="D:\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\digitsOutline" />
+      <recent name="D:\GitHub\Igraj_i_nauci\igraj_i_nauci\src\images\digits" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -77,6 +79,13 @@
       <workItem from="1644078077811" duration="18691000" />
       <workItem from="1644348214090" duration="2286000" />
       <workItem from="1644505166344" duration="11646000" />
+      <workItem from="1651760672094" duration="4510000" />
+      <workItem from="1651839586380" duration="10804000" />
+      <workItem from="1652043254616" duration="1823000" />
+      <workItem from="1657108543016" duration="3919000" />
+      <workItem from="1657182511641" duration="4766000" />
+      <workItem from="1657220478713" duration="7805000" />
+      <workItem from="1657272020064" duration="30941000" />
     </task>
     <servers />
   </component>
