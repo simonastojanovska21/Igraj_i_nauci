@@ -49,16 +49,21 @@
 .board .board-row .square.winning {
   animation: scaleText 1.5s ease-in infinite;
 }
-@keyframes scaleText {
-  0% {
-    transform: 2.5rem;
-  }
-  50% {
-    font-size: 3rem;
-  }
-  100% {
-    font-size: 2.5rem;
-  }
+
+.memory .memory-row{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.memory .memory-row .memory-card {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #132F63;
+  font-size: 2.5rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s;
 }
 
 .gameButton {

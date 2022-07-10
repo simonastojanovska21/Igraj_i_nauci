@@ -9,12 +9,12 @@ const MathSubcategories=(props)=>{
         <div className={"lightBackground pt-3 "}>
 
             <div className={"container d-flex justify-content-start"}>
-                <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/math'}>
+                <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/categories'}>
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
 
-            <div className={"container pb-5 w-75"}>
+            <div className={"container-lg pt-5 pb-5 ps-5 w-50"}>
                 <div className="d-grid gap-2  ">
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/math/learnDigits'}>
                         Научи ги цифрите од 0-9</Link>

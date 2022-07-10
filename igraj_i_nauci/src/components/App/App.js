@@ -15,6 +15,12 @@ import Hangman from "../Games/hangman";
 import GuessForm from "../Math/guessForm";
 import MathTasks from "../Math/mathTasks";
 import TicTacToi from "../Games/TicTacToi";
+import Memory from "../Games/memory";
+import CountLetters from "../Macedonian/countLetters";
+import SelectLetter from "../Macedonian/selectLetter";
+import LearnLetter from "../Macedonian/learnLetter";
+import WriteLetterAlone from "../Macedonian/writeLetterAlone";
+import MacedonianTask from "../Macedonian/macedonianTask";
 
 class App extends Component{
   constructor(props) {
@@ -42,12 +48,18 @@ class App extends Component{
                   <Route path={"/math/mathTasks"} element={<MathTasks/>} />
                   <Route path={"/math"} element={<MathSubcategories/>}/>
 
+                  <Route path={"/macedonian/macedonianTasks"} element={<MacedonianTask />} />
+                  <Route path={"/macedonian/writeLetterAlone"} element={<WriteLetterAlone />} />
+                  <Route path={"/macedonian/learnLetter"} element={<LearnLetter />} />
+                  <Route path={"/macedonian/selectLetter"} element={<SelectLetter />} />
+                  <Route path={"/macedonian/countLetters"} element={<CountLetters />} />
                   <Route path={"/macedonian"} element={<MacedonianSubcategory/>}/>
 
                   <Route path={"/science"} element={<ScienceSubcategory/>}/>
 
                   <Route path={"/games/hangman"} element={<Hangman/>} />
                   <Route path={"/games/TicTacToi"} element={<TicTacToi/>} />
+                  <Route path={"/games/memory"} element={<Memory />} />
                   <Route path={"/games"} element={<GamesSubcategory/>}/>
               </Routes>
             </div>
