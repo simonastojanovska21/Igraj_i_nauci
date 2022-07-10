@@ -20,7 +20,7 @@ const GamesSubcategory=(props)=>{
                         Играј Х - О</Link>
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/games/memory'}>
                         Играј игра на меморија</Link>
-                    <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/categories'}>
+                    <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/games/snake'}>
                         Играј snake</Link>
                 </div>
             </div>

@@ -21,6 +21,11 @@ import SelectLetter from "../Macedonian/selectLetter";
 import LearnLetter from "../Macedonian/learnLetter";
 import WriteLetterAlone from "../Macedonian/writeLetterAlone";
 import MacedonianTask from "../Macedonian/macedonianTask";
+import SelectOutlier from "../Science/selectOutlier";
+import Snake from "../Games/snake";
+import WaterCirculation from "../Science/waterCirculation";
+import HumanBody from "../Science/humanBody";
+import ScienceTask from "../Science/scienceTask";
 
 class App extends Component{
   constructor(props) {
@@ -55,11 +60,16 @@ class App extends Component{
                   <Route path={"/macedonian/countLetters"} element={<CountLetters />} />
                   <Route path={"/macedonian"} element={<MacedonianSubcategory/>}/>
 
+                  <Route path={"/science/scienceTask"} element={<ScienceTask />} />
+                  <Route path={"/science/humanBody"} element={<HumanBody />} />
+                  <Route path={"/science/waterCirculation"} element={<WaterCirculation />} />
+                  <Route path={"/science/selectOutlier"} element={<SelectOutlier />} />
                   <Route path={"/science"} element={<ScienceSubcategory/>}/>
 
                   <Route path={"/games/hangman"} element={<Hangman/>} />
                   <Route path={"/games/TicTacToi"} element={<TicTacToi/>} />
                   <Route path={"/games/memory"} element={<Memory />} />
+                  <Route path={"/games/snake"} element={<Snake />} />
                   <Route path={"/games"} element={<GamesSubcategory/>}/>
               </Routes>
             </div>

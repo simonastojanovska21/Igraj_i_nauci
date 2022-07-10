@@ -18,7 +18,7 @@ const ScienceSubcategory=(props)=>{
                         Научи ги основните природни појави</Link>
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/categories'}>
                         Научи ги основните делови на човековото тело</Link>
-                    <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/categories'}>
+                    <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/science/selectOutlier'}>
                         Одреди го натрапникот во множеството</Link>
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/categories'}>
                         Решавај проблеми</Link>
