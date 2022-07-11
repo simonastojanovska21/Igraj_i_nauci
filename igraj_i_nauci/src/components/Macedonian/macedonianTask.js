@@ -19,73 +19,49 @@ const MacedonianTask=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 ps-5 w-50"}>
+            <div className={"container pb-5 app"}>
 
                 <div className={"text-center pb-5"}>
                     <span className={"h1"}>Одбери ја буквата која недостасува</span>
                 </div>
 
-                <div className={"row mt-3 d-flex justify-content-center"}>
+                <div className={"flex-div justify-content-center"}>
+                    <div className={"flex-row mt-3"}>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <img className={"img-fluid"} src={letterD} alt={"letterD icon"}/>
+                        <img className={"img-fluid flex-element"} src={letterD} alt={"letterD icon"}/>
+
+                        <img className={"img-fluid flex-element"} src={letterE} alt={"letterE icon"}/>
+
+                        <div className={"img-fluid flex-element  border border-dark"} />
+
+                        <img className={"img-fluid flex-element"} src={letterE} alt={"letterE icon"}/>
+
                     </div>
-
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <img className={"img-fluid "} src={letterE} alt={"letterE icon"}/>
-                    </div>
-
-                    <div className={"col-sm-2  d-flex justify-content-center border border-dark"}>
-                        <div className={"img-fluid "} />
-                    </div>
-
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <img className={"img-fluid"} src={letterE} alt={"letterE icon"}/>
-                    </div>
-
                 </div>
 
-                <br/>
-                <br/>
+                <div className={"flex-div justify-content-center"}>
+                    <div className={"flex-row mt-3"}>
 
-                <div className={"row mt-3"}>
-
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={letterS} alt={"letterS icon"}/>
+                        <Link onClick={()=>props.onTryAgain('/macedonian/macedonianTasks') } to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={letterS} alt={"letterS icon"}/>
                         </Link>
-                    </div>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
                         <Link  to={'/success'}>
-                            <img className={"img-fluid border border-dark"} src={letterT} alt={"letterT icon"}/>
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={letterT} alt={"letterT icon"}/>
                         </Link>
-                    </div>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid  border border-dark"} src={letterN} alt={"letterN icon"}/>
+                        <Link onClick={()=>props.onTryAgain('/macedonian/macedonianTasks') }  to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={letterN} alt={"letterN icon"}/>
                         </Link>
-                    </div>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={letterL} alt={"letterL icon"}/>
+                        <Link onClick={()=>props.onTryAgain('/macedonian/macedonianTasks') }  to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={letterL} alt={"letterL icon"}/>
                         </Link>
-                    </div>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={letterI} alt={"letterI icon"}/>
+                        <Link onClick={()=>props.onTryAgain('/macedonian/macedonianTasks') }  to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark"} src={letterV} alt={"letterV icon"}/>
                         </Link>
-                    </div>
 
-
-
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={letterV} alt={"letterV icon"}/>
-                        </Link>
                     </div>
                 </div>
 

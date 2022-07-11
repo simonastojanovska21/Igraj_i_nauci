@@ -9,7 +9,8 @@ const Home=(props)=>{
         <div className={"lightBackground pt-5 "}>
             <div className={"container-lg pt-5 pb-5 ps-5"}>
                 <div className={"row"}>
-                    <div className={"col"}>
+                    <div className={"col-sm "}>
+
                         <span className={"h1"}>Добредојде!</span>
                         <br/>
                         <div className={"pt-3 pb-5"}>
@@ -20,12 +21,12 @@ const Home=(props)=>{
                             </span>
                         </div>
 
-                        <div className="d-grid gap-2 col-6">
+                        <div className="d-grid gap-2 col-8 mx-auto">
                             <Link className={"btn btn-lg rounded-pill"} style={{backgroundColor: '#F79F77'}} to={'/categories'}>
                                 Започни</Link>
                         </div>
                     </div>
-                    <div className={"col justify-content-center align-items-center"}>
+                    <div className={"col-sm justify-content-center align-items-center"}>
                         <div>
                             <img src={homepageImage} className={"img-fluid mx-auto d-block"} alt={"boy and girl learning"}/>
                         </div>

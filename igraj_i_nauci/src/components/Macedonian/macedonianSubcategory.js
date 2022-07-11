@@ -12,8 +12,8 @@ const MacedonianSubcategory=(props)=>{
                 </Link>
             </div>
 
-            <div className={"container-lg pt-5 pb-5 ps-5 w-50"}>
-                <div className="d-grid gap-2 ">
+            <div className={"container pt-5 pb-5 "}>
+                <div className="d-grid gap-2 col-8 mx-auto">
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/macedonian/countLetters'}>
                         Изброј ги гласовите од зборот</Link>
                     <Link className={"btn btn-lg rounded-pill fw-bold text-white"} style={{backgroundColor: '#1483E4'}} to={'/macedonian/selectLetter'}>

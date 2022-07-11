@@ -26,12 +26,16 @@ import Snake from "../Games/snake";
 import WaterCirculation from "../Science/waterCirculation";
 import HumanBody from "../Science/humanBody";
 import ScienceTask from "../Science/scienceTask";
+import WaterCirculationFillOut from "../Science/waterCirculationFillOut";
+import Success from "../Home/success";
+import TryAgain from "../Home/tryAgain";
 
 class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-        digit : ''
+        digit : '',
+        lastLocation :'/'
     }
   }
 
@@ -45,25 +49,28 @@ class App extends Component{
               <Routes>
                   <Route path={"/"} element={<Home/>}/>
                   <Route path={"/categories"} element={<Categories/>}/>
+                  <Route path={"/success"} element={<Success />} />
+                  <Route path={"/tryAgain"} element={<TryAgain location={this.state.lastLocation}/>} />
 
                   <Route path={"/math/writeDigitAlone"} element={<WriteDigitAlone digit = {this.state.digit}/>}/>
                   <Route path={"/math/learnDigits"} element={<LearnDigits onGenerateDigit = {this.saveGeneratedDigit} />}/>
-                  <Route path={"/math/countElements"} element={<CountElements/>} />
-                  <Route path={"/math/guessForm"} element={<GuessForm/>} />
-                  <Route path={"/math/mathTasks"} element={<MathTasks/>} />
+                  <Route path={"/math/countElements"} element={<CountElements onTryAgain={this.saveLocation} />} />
+                  <Route path={"/math/guessForm"} element={<GuessForm onTryAgain={this.saveLocation} />} />
+                  <Route path={"/math/mathTasks"} element={<MathTasks onTryAgain={this.saveLocation}/>} />
                   <Route path={"/math"} element={<MathSubcategories/>}/>
 
-                  <Route path={"/macedonian/macedonianTasks"} element={<MacedonianTask />} />
+                  <Route path={"/macedonian/macedonianTasks"} element={<MacedonianTask onTryAgain={this.saveLocation} />} />
                   <Route path={"/macedonian/writeLetterAlone"} element={<WriteLetterAlone />} />
                   <Route path={"/macedonian/learnLetter"} element={<LearnLetter />} />
-                  <Route path={"/macedonian/selectLetter"} element={<SelectLetter />} />
-                  <Route path={"/macedonian/countLetters"} element={<CountLetters />} />
+                  <Route path={"/macedonian/selectLetter"} element={<SelectLetter onTryAgain={this.saveLocation} />} />
+                  <Route path={"/macedonian/countLetters"} element={<CountLetters onTryAgain={this.saveLocation} />} />
                   <Route path={"/macedonian"} element={<MacedonianSubcategory/>}/>
 
-                  <Route path={"/science/scienceTask"} element={<ScienceTask />} />
+                  <Route path={"/science/scienceTask"} element={<ScienceTask onTryAgain={this.saveLocation}  />} />
                   <Route path={"/science/humanBody"} element={<HumanBody />} />
                   <Route path={"/science/waterCirculation"} element={<WaterCirculation />} />
-                  <Route path={"/science/selectOutlier"} element={<SelectOutlier />} />
+                  <Route path={"/science/waterCirculationFillOut"} element={<WaterCirculationFillOut />} />
+                  <Route path={"/science/selectOutlier"} element={<SelectOutlier onTryAgain={this.saveLocation} />} />
                   <Route path={"/science"} element={<ScienceSubcategory/>}/>
 
                   <Route path={"/games/hangman"} element={<Hangman/>} />
@@ -84,6 +91,10 @@ class App extends Component{
     }
     saveGeneratedDigit = (digit)=>{
         this.setState({digit:digit})
+    }
+
+    saveLocation = (lastLocation)=>{
+      this.setState({lastLocation : lastLocation})
     }
 }
 

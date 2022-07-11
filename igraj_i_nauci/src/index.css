@@ -80,6 +80,19 @@
   transition: all 0.2s;
 }
 
+.flex-div .flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-div .flex-row .flex-element{
+  width: 150px;
+  height: 150px;
+  font-size: 2.5rem;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
 
 .gameButton {
   background: none;

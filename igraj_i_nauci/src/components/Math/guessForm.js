@@ -15,7 +15,7 @@ const GuessForm=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 w-50"}>
+            <div className={"container pb-5 app"}>
 
                 <div className={"text-center pb-5"}>
                     <span className={"h1"}>Одбери ја вистинската форма на фигурите</span>
@@ -25,28 +25,23 @@ const GuessForm=(props)=>{
                         className={"img-fluid mx-auto d-block"} style={{maxHeight: '300px'}} />
                </div>
 
-                <br/>
-                <div className={"row mt-3 "}>
-                    <div className={"col-sm-4 d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={triangle} alt={"triangle icon"}/>
-                        </Link>
-                    </div>
+                <div className={"flex-div justify-content-center"}>
+                    <div className={"flex-row mt-3"}>
 
-                    <div className={"col-sm-4 d-flex justify-content-center"}>
+                        <Link onClick={()=>props.onTryAgain('/math/guessForm') } to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={triangle} alt={"triangle icon"}/>
+                        </Link>
+
                         <Link  to={'/success'}>
-                            <img className={"img-fluid border border-dark"} src={circle} alt={"circle icon"} />
+                            <img className={"img-fluid flex-element border border-dark me-3"} src={circle} alt={"circle icon"} />
                         </Link>
-                    </div>
 
-                    <div className={"col-sm-4 d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={star} alt={"star icon"} />
+                        <Link onClick={()=>props.onTryAgain('/math/guessForm') } to={'/tryAgain'}>
+                            <img className={"img-fluid flex-element border border-dark"} src={star} alt={"star icon"} />
                         </Link>
-                    </div>
 
+                    </div>
                 </div>
-
             </div>
         </div>
     )

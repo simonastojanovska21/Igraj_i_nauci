@@ -102,12 +102,9 @@ class Memory extends Component{
                         <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                     </Link>
 
-                    <button className={"btn rounded-pill fw-bold text-white "} style={{backgroundColor: '#1483E4'}}  onClick={this.onPlayAgain} >
-                        <img className={"img-fluid"} style={{maxHeight:'20px'}} src={reset} alt={"reset icon"}/>  Повторно
-                    </button>
                 </div>
 
-                <div className={"container pb-5 ps-5 app"}>
+                <div className={"container pb-5 app"}>
 
                     <div className="memory">
 

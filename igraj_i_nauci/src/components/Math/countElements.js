@@ -18,7 +18,7 @@ const CountElements=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 ps-5 w-50"}>
+            <div className={"container pb-5 app"}>
 
                 <div className={"text-center pb-5"}>
                     <span className={"h1"}>Одбери го точниот број на фигури</span>
@@ -29,44 +29,36 @@ const CountElements=(props)=>{
                          className={"img-fluid mx-auto d-block"} style={{maxHeight: '300px'}} />
                 </div>
 
-                <div className={"row mt-3"}>
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={one} alt={"one icon"}/>
-                        </Link>
-                    </div>
+               <div className={"flex-div justify-content-center"}>
+                   <div className={"flex-row mt-3"}>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid  border border-dark"} src={two} alt={"two icon"}/>
-                        </Link>
-                    </div>
+                       <Link onClick={()=>props.onTryAgain('/math/countElements') } to={'/tryAgain'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={one} alt={"one icon"}/>
+                       </Link>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={three} alt={"three icon"}/>
-                        </Link>
-                    </div>
+                       <Link onClick={()=>props.onTryAgain('/math/countElements') } to={'/tryAgain'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={two} alt={"two icon"}/>
+                       </Link>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={four} alt={"four icon"}/>
-                        </Link>
-                    </div>
+                       <Link onClick={()=>props.onTryAgain('/math/countElements') } to={'/tryAgain'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={three} alt={"three icon"}/>
+                       </Link>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/success'}>
-                            <img className={"img-fluid border border-dark"} src={five} alt={"five icon"}/>
-                        </Link>
-                    </div>
+                       <Link onClick={()=>props.onTryAgain('/math/countElements') } to={'/tryAgain'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={four} alt={"four icon"}/>
+                       </Link>
 
-                    <div className={"col-sm-2  d-flex justify-content-center"}>
-                        <Link  to={'/tryAgain'}>
-                            <img className={"img-fluid border border-dark"} src={six} alt={"six icon"}/>
-                        </Link>
-                    </div>
-                </div>
+                       <Link  to={'/success'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={five} alt={"five icon"}/>
+                       </Link>
 
+                       <Link onClick={()=>props.onTryAgain('/math/countElements') } to={'/tryAgain'}>
+                           <img className={"img-fluid flex-element border border-dark"} src={six} alt={"six icon"}/>
+                       </Link>
+
+                   </div>
+
+               </div>
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ const SelectLetter=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 ps-5 w-75"}>
+            <div className={"container pb-5 app"}>
 
                 <div className={"text-center pb-3"}>
                     <span className={"h1"}>Одбери ја буквата на која започнува зборот</span>
@@ -28,43 +28,28 @@ const SelectLetter=(props)=>{
                          className={"img-fluid mx-auto d-block"} style={{maxHeight: '300px'}} />
                 </div>
 
-                <div className={" d-flex justify-content-center mt-2"}>
-                    <div className={"row mt-3 w-75"}>
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={letterT} alt={"letterT icon"}/>
-                            </Link>
-                        </div>
+                <div className={"flex-div justify-content-center"}>
+                    <div className={"flex-row mt-3"}>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid  border border-dark"} src={letterS} alt={"letterS icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/selectLetter') } to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark me-3"} src={letterT} alt={"letterT icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/selectLetter') } to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark  me-3"} src={letterS} alt={"letterS icon"}/>
+                            </Link>
+
                             <Link  to={'/success'}>
-                                <img className={"img-fluid border border-dark"} src={letterV} alt={"letterV icon"}/>
+                                <img className={"img-fluid flex-element border border-dark  me-3"} src={letterV} alt={"letterV icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={letterN} alt={"letterN icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/selectLetter') } to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark  me-3"} src={letterN} alt={"letterN icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={letterL} alt={"letterL icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/selectLetter') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark  me-3"} src={letterL} alt={"letterL icon"}/>
                             </Link>
-                        </div>
-
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={letterI} alt={"letterI icon"}/>
-                            </Link>
-                        </div>
 
                     </div>
                 </div>

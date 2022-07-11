@@ -17,7 +17,7 @@ const CountLetters=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 ps-5 w-75"}>
+            <div className={"container pb-5 app"}>
 
                 <div className={"text-center pb-3"}>
                     <span className={"h1"}>Одбери го точниот број на гласови во зборот</span>
@@ -28,43 +28,33 @@ const CountLetters=(props)=>{
                          className={"img-fluid mx-auto d-block"} style={{maxHeight: '300px'}} />
                 </div>
 
-                <div className={" d-flex justify-content-center mt-2"}>
-                    <div className={"row mt-3 w-75"}>
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={seven} alt={"seven icon"}/>
-                            </Link>
-                        </div>
+                <div className={"flex-div justify-content-center"}>
+                    <div className={"flex-row mt-3"}>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid  border border-dark"} src={two} alt={"two icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/countLetters') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark"} src={seven} alt={"seven icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={six} alt={"six icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/countLetters') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark"} src={two} alt={"two icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={nine} alt={"nine icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/countLetters') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark"} src={six} alt={"six icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/countLetters') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark"} src={nine} alt={"nine icon"}/>
+                            </Link>
+
                             <Link  to={'/success'}>
-                                <img className={"img-fluid border border-dark"} src={five} alt={"five icon"}/>
+                                <img className={"img-fluid flex-element border border-dark"} src={five} alt={"five icon"}/>
                             </Link>
-                        </div>
 
-                        <div className={"col-sm-2  d-flex justify-content-center"}>
-                            <Link  to={'/tryAgain'}>
-                                <img className={"img-fluid border border-dark"} src={eight} alt={"eight icon"}/>
+                            <Link onClick={()=>props.onTryAgain('/macedonian/countLetters') }  to={'/tryAgain'}>
+                                <img className={"img-fluid flex-element border border-dark"} src={eight} alt={"eight icon"}/>
                             </Link>
-                        </div>
+
 
                     </div>
                 </div>

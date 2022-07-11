@@ -13,14 +13,14 @@ const LearnDigits=(props)=>{
                     <img className={"img-fluid"} style={{maxHeight:'20px'}} src={back} alt={"back icon"}/>  Назад
                 </Link>
             </div>
-            <div className={"container pb-5 ps-5 w-50"}>
+            <div className={"container pb-5"}>
                 <div className={"text-center pb-5"}>
                     <span className={"h1"}>Денеска ја пишуваме цифрата {number} </span>
                 </div>
                 <img src={require('../../images/digits/'+ number +'.gif')} alt={"number gif"}
                      className={"img-fluid mx-auto d-block"} style={{maxHeight: '350px'}} />
 
-                <div className="d-grid gap-2 pt-5">
+                <div className="d-grid gap-2 col-6 mx-auto pt-5">
                 <Link className={"btn btn-lg rounded-pill fw-bold text-white"}
                       onClick = { ()=>props.onGenerateDigit(number) }
                       style={{backgroundColor: '#1483E4'}} to={'/math/writeDigitAlone'}>
